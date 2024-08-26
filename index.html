@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="home ">
+           <div class="container d-flex justify-content-center flex-column align-items-center ">
+            <h1 class="my-5 py-2 position-relative">
+                Bookmarker
+            </h1>
+            <div class="home-search py-4 w-100 ">
+                <h2 class="mb-5 text-center">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <i class="fa-solid fa-book-bookmark"></i>
+                <label for="" class="fw-bold px-2">Site Name</label>
+                <input type="text" placeholder="Bookmark Name " id="bookmarkInput" class="form-control mb-4 mt-2 ">
+                <i class="fa-solid fa-link"></i>
+                <label for="" class="fw-bold px-2">Site URL</label>
+                <input type="text" placeholder="Website URL " id="websiteInput" class="form-control mb-4 mt-2 ">
+                <div class="d-flex justify-content-center">
+                    <button onclick="createBooKmark()" class="btn btn-outline-danger px-5 d-flex align-items-center" id="subInput">Submit</button>
+                </div>
+            </div>
+            <input onkeyup="searchBookmarks()" type="text" placeholder="search..." class="form-control w-75 my-4 py-2" id="searchInput">
+            <div class="table-responsive w-100">
+            <table
+                class="table text-center table-striped " >
+                <thead>
+                    <tr>
+                        <th >Index</th>
+                        <th >Website Name</th>
+                        <th >Visit</th>
+                        <th >Delete</th>
+                        <th >Update</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+            </div>
+           </div>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.home{
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+::selection{
+    background-color: #fec260;
+}
+.home h1{
+    font-family: "Pacifico", cursive;
+    z-index: 1;
+   font-size: 50px;
+}
+.home h1::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 25%;
+   background-color: #fec260;
+   left: 0;
+   bottom: 10px;
+   z-index:-1;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+.home h1:hover::before{
+    height: 50%;
+}
+.home .home-search{
+    border-top: 2px black dotted;
+    border-bottom: 2px black dotted;
+}
+.home h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;;
+    background-image: linear-gradient(to left, #3ca55c , #b5ac49, #3ca55c , #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
